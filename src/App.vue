@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <h1 class="title">Список пользователей</h1>
+      <Search/>
+      <Table/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Search from "@/components/search/Search"
+import Table from "@/components/table/Table"
 
 export default {
   name: 'App',
+  data() {
+    return {}
+  },
   components: {
-    HelloWorld
+    Search,
+    Table
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+#app
+  padding: 1.25rem 0 0
+
+.title
+  font:
+    size: 1.75rem
+    weight: 700
+    
 </style>

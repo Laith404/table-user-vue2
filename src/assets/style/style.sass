@@ -1,0 +1,60 @@
+$white-color: #e5e6e7
+$text-color: #222222
+$line-height: 1.65
+    
+input, textarea 
+  outline: none 
+  &:focus:required:invalid 
+    border-color: red
+  &:required:valid 
+    border-color: green
+
+html, body
+  width: 100%
+  height: auto
+
+body 
+  position: relative
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+  min-height: 100%
+  font-family: "Open Sans", sans-serif
+  font-size: 1rem
+  line-height: $line-height
+  color: $text-color
+  background: $white-color
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+  line-height: 1
+  
+p 
+  margin: 0
+  padding: 0
+  line-height: 1
+
+ul 
+  margin: 0
+  padding: 0
+  list-style: none
+
+a, a:hover
+  text-decoration: none
+
+img
+  user-select: none
+  pointer-events: none
+
+.container
+  width: auto
+  padding: 0 .9375rem
+  margin: 0 auto
+  max-width: 75rem
+  display: block
+  position: relative
+
+.hidden
+    opacity: 0
+    visibility: none

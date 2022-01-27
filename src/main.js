@@ -1,7 +1,10 @@
+import '@babel/polyfill'
+import 'core-js/stable'
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
-
+import './assets/style/style.sass'
+import '@fortawesome/fontawesome-free/js/all'
 Vue.config.productionTip = false
 
 new Vue({
