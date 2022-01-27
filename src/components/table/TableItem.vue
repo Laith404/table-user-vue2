@@ -40,6 +40,7 @@ export default {
         &:last-child
             position: absolute
             right: 5rem
+            padding: .5rem 1.25rem
 
     button
         background: none

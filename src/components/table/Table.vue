@@ -205,6 +205,7 @@ export default {
                     size: .875rem
                     weight: 400
                 opacity: .6
+                text-align: left
                 
 
 
